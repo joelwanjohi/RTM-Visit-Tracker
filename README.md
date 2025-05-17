@@ -1,7 +1,5 @@
 # RTM Visit Tracker
 
-![Main Banner](screenshots/banner.png)
-
 ## Overview
 
 RTM Visit Tracker is a Flutter-based feature for Route-to-Market (RTM) Sales Force Automation, crafted to empower sales representatives to manage customer visits with ease and efficiency. Built for the Flutter Mobile Engineer Technical Challenge, this production-quality mobile application delivers a robust, user-friendly experience, allowing users to:
