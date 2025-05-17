@@ -1,0 +1,58 @@
+# Flutter/Dart/Pub related
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+app.*.symbols
+app.*.map.json
+
+# Android related
+/android/.gradle/
+/android/app/debug
+/android/app/profile
+/android/app/release
+/android/local.properties
+
+# iOS related
+/ios/Flutter/App.framework
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Generated.xcconfig
+/ios/Runner/GeneratedPluginRegistrant.*
+
+# Sensitive files
+.env
+*.key
+*.pem
+*.cert
+
+# Generated files
+*.g.dart
+*.freezed.dart
+*.mocks.dart
+
+# Editor/IDE files
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.DS_Store
+
+# Logs
+*.log
+logs/
+
+# Testing
+coverage/
+
+# Miscellaneous
+*.swp
+*.swo
+*~
+*.apk
+*.aab
