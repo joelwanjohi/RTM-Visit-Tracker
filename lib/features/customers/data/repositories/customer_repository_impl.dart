@@ -3,7 +3,6 @@ import 'package:dartz/dartz.dart';
 import 'package:rtm_visit_tracker/core/error/failures.dart';
 import 'package:rtm_visit_tracker/features/customers/data/datasources/customer_local_data_source.dart';
 import 'package:rtm_visit_tracker/features/customers/data/datasources/customer_remote_data_source.dart';
-import 'package:rtm_visit_tracker/features/customers/data/models/customer_model.dart';
 import 'package:rtm_visit_tracker/features/customers/domain/entities/customer.dart';
 import 'package:rtm_visit_tracker/features/customers/domain/repositories/customer_repository.dart';
 
@@ -21,11 +20,11 @@ class CustomerRepositoryImpl implements CustomerRepository {
   @override
   Future<Either<Failure, List<Customer>>> getAllCustomers() async {
     try {
-      final connectivityResult = await connectivity.checkConnectivity();
-      if (connectivityResult == ConnectivityResult.none) {
+      if ((await connectivity.checkConnectivity()).contains(ConnectivityResult.none)) {
         final localCustomers = await localDataSource.getCustomers();
         return Right(localCustomers.map((model) => model.toEntity()).toList());
       }
+
       final remoteCustomers = await remoteDataSource.getCustomers();
       await localDataSource.cacheCustomers(remoteCustomers);
       return Right(remoteCustomers.map((model) => model.toEntity()).toList());

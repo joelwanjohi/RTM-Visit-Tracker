@@ -1,6 +1,5 @@
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:dartz/dartz.dart';
-import 'package:rtm_visit_tracker/core/error/exceptions.dart';
 import 'package:rtm_visit_tracker/core/error/failures.dart';
 import 'package:rtm_visit_tracker/features/visits/data/datasources/visit_local_data_source.dart';
 import 'package:rtm_visit_tracker/features/visits/data/datasources/visit_remote_data_source.dart';

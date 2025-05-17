@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:rtm_visit_tracker/core/theme/app_theme.dart';
 import 'package:rtm_visit_tracker/features/statistics/presentation/bloc/statistics_bloc.dart';
 
 class StatisticsScreen extends StatelessWidget {

@@ -1,0 +1,45 @@
+Analyzing rtm_visit_tracker...                                  
+
+   info • Parameter 'message' could be a super parameter • lib/core/error/failures.dart:8:3 • use_super_parameters
+   info • Parameter 'message' could be a super parameter • lib/core/error/failures.dart:12:3 • use_super_parameters
+   info • 'DioError' is deprecated and shouldn't be used. Use DioException instead. This will be removed in 6.0.0 • lib/core/network/dio_client.dart:16:17 • deprecated_member_use
+   info • 'value' is deprecated and shouldn't be used. Use component accessors like .r or .g, or toARGB32 for an explicit conversion • lib/core/theme/app_theme.dart:11:78 • deprecated_member_use
+   info • The imported package 'bloc' isn't a dependency of the importing package • lib/features/activities/presentation/bloc/activity_bloc.dart:1:8 • depend_on_referenced_packages
+   info • Constructors in '@immutable' classes should be declared as 'const' • lib/features/activities/presentation/bloc/activity_state.dart:19:3 • prefer_const_constructors_in_immutables
+   info • The imported package 'bloc' isn't a dependency of the importing package • lib/features/customers/presentation/bloc/customer_bloc.dart:1:8 • depend_on_referenced_packages
+   info • 'onBackground' is deprecated and shouldn't be used. Use onSurface instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/statistics/presentation/screens/statistics_screen.dart:149:54 • deprecated_member_use
+   info • The type of the right operand ('ConnectivityResult') isn't a subtype or a supertype of the left operand ('List<ConnectivityResult>') • lib/features/visits/data/repositories/visit_repository_impl.dart:25:30 • unrelated_type_equality_checks
+   info • The type of the right operand ('ConnectivityResult') isn't a subtype or a supertype of the left operand ('List<ConnectivityResult>') • lib/features/visits/data/repositories/visit_repository_impl.dart:42:30 • unrelated_type_equality_checks
+   info • The type of the right operand ('ConnectivityResult') isn't a subtype or a supertype of the left operand ('List<ConnectivityResult>') • lib/features/visits/data/repositories/visit_repository_impl.dart:59:30 • unrelated_type_equality_checks
+   info • The type of the right operand ('ConnectivityResult') isn't a subtype or a supertype of the left operand ('List<ConnectivityResult>') • lib/features/visits/data/repositories/visit_repository_impl.dart:75:30 • unrelated_type_equality_checks
+   info • 'background' is deprecated and shouldn't be used. Use surface instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/visits/presentation/screens/visit_details_screen.dart:22:36 • deprecated_member_use
+warning • The receiver can't be null, so the null-aware operator '?.' is unnecessary • lib/features/visits/presentation/screens/visit_details_screen.dart:85:51 • invalid_null_aware_operator
+warning • The left operand can't be null, so the right operand is never executed • lib/features/visits/presentation/screens/visit_details_screen.dart:92:62 • dead_null_aware_expression
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/visits/presentation/screens/visit_details_screen.dart:115:62 • deprecated_member_use
+   info • 'background' is deprecated and shouldn't be used. Use surface instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/visits/presentation/screens/visit_form_screen.dart:90:36 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/visits/presentation/screens/visit_form_screen.dart:130:56 • deprecated_member_use
+warning • The left operand can't be null, so the right operand is never executed • lib/features/visits/presentation/screens/visit_form_screen.dart:143:70 • dead_null_aware_expression
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/visits/presentation/screens/visit_form_screen.dart:158:89 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/visits/presentation/screens/visit_form_screen.dart:215:85 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/visits/presentation/screens/visit_form_screen.dart:244:85 • deprecated_member_use
+   info • Don't use 'BuildContext's across async gaps • lib/features/visits/presentation/screens/visit_form_screen.dart:281:37 • use_build_context_synchronously
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/visits/presentation/screens/visit_form_screen.dart:313:64 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/visits/presentation/screens/visit_form_screen.dart:372:85 • deprecated_member_use
+warning • The left operand can't be null, so the right operand is never executed • lib/features/visits/presentation/screens/visit_form_screen.dart:423:72 • dead_null_aware_expression
+   info • 'surfaceVariant' is deprecated and shouldn't be used. Use surfaceContainerHighest instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/visits/presentation/screens/visit_form_screen.dart:526:63 • deprecated_member_use
+   info • 'background' is deprecated and shouldn't be used. Use surface instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/visits/presentation/screens/visit_list_screen.dart:51:36 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/visits/presentation/screens/visit_list_screen.dart:81:49 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/visits/presentation/screens/visit_list_screen.dart:96:47 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/visits/presentation/screens/visit_list_screen.dart:108:47 • deprecated_member_use
+   info • 'withOpacity' is deprecated and shouldn't be used. Use .withValues() to avoid precision loss • lib/features/visits/presentation/screens/visit_list_screen.dart:180:47 • deprecated_member_use
+   info • 'onBackground' is deprecated and shouldn't be used. Use onSurface instead. This feature was deprecated after v3.18.0-0.1.pre • lib/features/visits/presentation/screens/visit_list_screen.dart:218:44 • deprecated_member_use
+warning • The receiver can't be null, so the null-aware operator '?.' is unnecessary • lib/features/visits/presentation/widgets/visit_card.dart:18:41 • invalid_null_aware_operator
+warning • Unused import: 'package:rtm_visit_tracker/features/activities/domain/entities/activity.dart' • test/unit/activity_repository_test.dart:12:8 • unused_import
+   info • Don't return 'null' from a function with a return type of 'void' • test/unit/activity_repository_test.dart:46:69 • avoid_returning_null_for_void
+warning • Unused import: 'package:rtm_visit_tracker/features/customers/domain/entities/customer.dart' • test/unit/customer_repository_test.dart:12:8 • unused_import
+   info • Don't return 'null' from a function with a return type of 'void' • test/unit/customer_repository_test.dart:46:68 • avoid_returning_null_for_void
+warning • Unused import: 'package:rtm_visit_tracker/features/visits/domain/entities/visit.dart' • test/unit/visit_repository_test.dart:12:8 • unused_import
+   info • Don't return 'null' from a function with a return type of 'void' • test/unit/visit_repository_test.dart:52:65 • avoid_returning_null_for_void
+   info • Don't return 'null' from a function with a return type of 'void' • test/unit/visit_repository_test.dart:98:64 • avoid_returning_null_for_void
+   info • Don't return 'null' from a function with a return type of 'void' • test/unit/visit_repository_test.dart:112:64 • avoid_returning_null_for_void
+

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:intl/intl.dart';
-import 'package:rtm_visit_tracker/core/theme/app_theme.dart';
 import 'package:rtm_visit_tracker/features/activities/domain/entities/activity.dart';
 import 'package:rtm_visit_tracker/features/activities/presentation/bloc/activity_bloc.dart';
 import 'package:rtm_visit_tracker/features/customers/domain/entities/customer.dart';

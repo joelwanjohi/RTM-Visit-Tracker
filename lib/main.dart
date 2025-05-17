@@ -3,30 +3,44 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:go_router/go_router.dart';
 import 'package:hive_flutter/hive_flutter.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
+
 import 'package:rtm_visit_tracker/core/di/injection.dart';
 import 'package:rtm_visit_tracker/core/theme/app_theme.dart';
 import 'package:rtm_visit_tracker/features/activities/data/models/activity_model.dart';
 import 'package:rtm_visit_tracker/features/customers/data/models/customer_model.dart';
-import 'package:rtm_visit_tracker/features/statistics/presentation/screens/statistics_screen.dart';
 import 'package:rtm_visit_tracker/features/visits/data/models/visit_model.dart';
 import 'package:rtm_visit_tracker/features/visits/domain/entities/visit.dart';
 import 'package:rtm_visit_tracker/features/visits/presentation/bloc/visit_bloc.dart';
 import 'package:rtm_visit_tracker/features/customers/presentation/bloc/customer_bloc.dart';
 import 'package:rtm_visit_tracker/features/activities/presentation/bloc/activity_bloc.dart';
 import 'package:rtm_visit_tracker/features/statistics/presentation/bloc/statistics_bloc.dart';
-import 'package:rtm_visit_tracker/features/visits/presentation/screens/visit_details_screen.dart';
-import 'package:rtm_visit_tracker/features/visits/presentation/screens/visit_form_screen.dart';
-
 import 'package:rtm_visit_tracker/features/visits/presentation/screens/visit_list_screen.dart';
+import 'package:rtm_visit_tracker/features/visits/presentation/screens/visit_form_screen.dart';
+import 'package:rtm_visit_tracker/features/visits/presentation/screens/visit_details_screen.dart';
+import 'package:rtm_visit_tracker/features/statistics/presentation/screens/statistics_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+
+  // Load .env file
   await dotenv.load(fileName: '.env');
+
+  // Initialize Supabase
+  await Supabase.initialize(
+    url: dotenv.env['SUPABASE_URL']!,
+    anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
+  );
+
+  // Initialize Hive
   await Hive.initFlutter();
-  Hive.registerAdapter(VisitModelAdapter());
-  Hive.registerAdapter(CustomerModelAdapter());
   Hive.registerAdapter(ActivityModelAdapter());
+  Hive.registerAdapter(CustomerModelAdapter());
+  Hive.registerAdapter(VisitModelAdapter());
+
+  // Initialize dependency injection
   await init();
+
   runApp(const MyApp());
 }
 
