@@ -1,4 +1,3 @@
 
-Running Gradle task 'assembleDebug'...                          
-Running Gradle task 'assembleDebug'...                            218.6s
+Running Gradle task 'assembleDebug'...                             23.7s
 ✓ Built build/app/outputs/flutter-apk/app-debug.apk
