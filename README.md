@@ -21,10 +21,10 @@ The app integrates with a Supabase backend via REST APIs, leverages the BLoC pat
 
 <table>
   <tr>
-    <td><img src="screenshots/visit_list.png" alt="Visit List Screen" width="200"/></td>
-    <td><img src="screenshots/visit_form.png" alt="Visit Form Screen" width="200"/></td>
-    <td><img src="screenshots/visit_details.png" alt="Visit Details Screen" width="200"/></td>
-    <td><img src="screenshots/statistics.png" alt="Statistics Screen" width="200"/></td>
+    <td><img src="screenshots/visit_list.PNG" alt="Visit List Screen" width="200"/></td>
+    <td><img src="screenshots/visit_form.PNG" alt="Visit Form Screen" width="200"/></td>
+    <td><img src="screenshots/visit_details.PNG" alt="Visit Details Screen" width="200"/></td>
+    <td><img src="screenshots/statistics.PNG" alt="Statistics Screen" width="200"/></td>
   </tr>
   <tr>
     <td align="center"><b>Visit List</b></td>
