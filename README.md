@@ -155,9 +155,9 @@ To run the RTM Visit Tracker locally, follow these steps:
 3. **Configure Environment:**
    Create a `.env` file in the project root:
    ```
-SUPABASE_URL=your-supabase-url
-SUPABASE_ANON_KEY=your-anon-key
-API_URL=your-api-url
+   SUPABASE_URL=your-supabase project-url
+   SUPABASE_ANON_KEY=your-anon-key
+   API_URL=your-api-url
 
    ```
 
