@@ -237,6 +237,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-Joel Wanjohi - [@joelwanjohi](https://github.com/joelwanjohi)
+Joel Wanjohi - [@joelwanjohi](joelwanjohi207@gmail.com)
 
 Project Link: [https://github.com/joelwanjohi/RTM-Visit-Tracker](https://github.com/joelwanjohi/RTM-Visit-Tracker)
