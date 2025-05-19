@@ -39,7 +39,7 @@ The app integrates with a Supabase backend via REST APIs, leverages the BLoC pat
 ### Direct APK Installation
 You can install the app directly by downloading the release APK:
 
-1. Download the APK from: [app-release.apk](build/app/outputs/flutter-apk/app-release.apk)
+1. Download the APK from: [app-release.apk](/disk2/Test/rtm_visit_tracker/build/app/outputs/apk/release/app-release.apk)
 2. On your Android device, enable installation from unknown sources in settings
 3. Open the downloaded APK file to install the application
 
