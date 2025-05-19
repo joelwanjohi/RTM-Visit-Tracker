@@ -34,6 +34,15 @@ The app integrates with a Supabase backend via REST APIs, leverages the BLoC pat
   </tr>
 </table>
 
+Installation
+Direct APK Installation
+You can install the app directly by downloading the release APK:
+
+Download the APK from: app-release.apk
+
+On your Android device, enable installation from unknown sources in settings
+Open the downloaded APK file to install the application
+
 ## Project Structure
 
 The project follows a clean architecture-inspired folder structure, promoting modularity, testability, and ease of maintenance. Below is the organization of key directories and files:
